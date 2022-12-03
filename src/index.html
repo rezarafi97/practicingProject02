@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="app/images/favicon.png" type="image/x-icon">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet" href="app/plugins/lightbox2/css/lightbox.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="app/plugins/animate/animate.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="app/plugins/slick/slick.css">
+    <link rel="stylesheet" href="app/plugins/slick/slick-theme.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="header">
+        <!-- header navbar section -->
+        <section class="header-navbar">
+            <section class="container">
+                <section class="row">
+                    <section class="col-6 col-lg-4">
+                        <section class="header-navbar__brand py-3 py-lg-4">
+                            <a class="header-navbar__brand__link" href="#">
+                                <img class="header-navbar__brand__img--white" id="whiteLogo"
+                                    src="app/images/logo-white.png" alt="">
+
+                                <img class="header-navbar__brand__img--black" id="blackLogo" src="app/images/logo.png"
+                                    alt="">
+                            </a>
+                        </section>
+                    </section>
+
+                    <section class="header-navbar__bar py-3 col-6" id="barBtn">
+                        <span>
+                            <i class="header-navbar__bar__icon fa fa-bars"></i>
+                        </span>
+                    </section>
+
+                    <section class="col-lg-8">
+                        <section class="header-navbar__menu">
+                            <section class="header-navbar__menu-container d-flex justify-content-between">
+                                <section class="header-navbar__menu__items active py-1 py-lg-4" id="homepage">
+                                    <span>HOMEPAGE</span>
+
+                                    <span>
+                                        <i class="fa fa-chevron-down ml-1"></i>
+                                    </span>
+
+                                    <!-- dropdown section start -->
+                                    <section class="header-navbar__menu__dropdown--homepage" id="homePageDropdown">
+                                        <section class="header-navbar__menu__dropdown__items--homepage">
+                                            Homepage
+                                        </section>
+
+                                        <section class="header-navbar__menu__dropdown__items--homepage">
+                                            Onepage 1
+                                        </section>
+
+                                        <section class="header-navbar__menu__dropdown__items--homepage">
+                                            Onepage 2
+                                        </section>
+
+                                        <section class="header-navbar__menu__dropdown__items--homepage"
+                                            id="homepageSubmenu">
+                                            Submenu
+
+                                            <i class="fa fa-chevron-down ml-1"></i>
+
+                                            <section class="header-navbar__menu__dropdown--homepage--submenu"
+                                                id="homePageDropdownSubmenu">
+                                                <section
+                                                    class="header-navbar__menu__dropdown__items--homepage--submenu">
+                                                    Submenu
+                                                    1
+                                                </section>
+
+                                                <section
+                                                    class="header-navbar__menu__dropdown__items--homepage--submenu">
+                                                    Submenu
+                                                    2
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <!-- dropdown section end -->
+                                </section>
+
+                                <section class="header-navbar__menu__items py-1 py-lg-4">
+                                    <span>ABOUT US</span>
+                                </section>
+
+                                <section class="header-navbar__menu__items py-1 py-lg-4">
+                                    <span>SERVICES</span>
+                                </section>
+
+                                <section class="header-navbar__menu__items py-1 py-lg-4">
+                                    <span>PORTFOLIO</span>
+                                </section>
+
+                                <section class="header-navbar__menu__items py-1 py-lg-4">
+                                    <span>TEAM</span>
+                                </section>
+
+                                <section class="header-navbar__menu__items py-1 py-lg-4">
+                                    <span>PRICING</span>
+                                </section>
+
+                                <section class="header-navbar__menu__items py-1 py-lg-4">
+                                    <span>CONTACT</span>
+                                </section>
+
+                                <section class="header-navbar__menu__items py-1 py-lg-4" id="pages">
+                                    <span>PAGES</span>
+
+                                    <span>
+                                        <i class="fa fa-chevron-down ml-1"></i>
+                                    </span>
+
+                                    <!-- dropdown section start -->
+                                    <section class="header-navbar__menu__dropdown--pages" id="pagesDropdown">
+                                        <section class="header-navbar__menu__dropdown__items--pages">
+                                            404 Page
+                                        </section>
+
+                                        <section class="header-navbar__menu__dropdown__items--pages">
+                                            Blog Page
+                                        </section>
+
+                                        <section class="header-navbar__menu__dropdown__items--pages">
+                                            Blog Page Single
+                                        </section>
+
+                                        <section class="header-navbar__menu__dropdown__items--pages" id="pagesSubmenu">
+                                            Submenu
+
+                                            <i class="fa fa-chevron-down ml-1"></i>
+
+                                            <section class="header-navbar__menu__dropdown--pages--submenu"
+                                                id="pagesDropdownSubmenu">
+                                                <section class="header-navbar__menu__dropdown__items--pages--submenu">
+                                                    Submenu 1
+                                                </section>
+
+                                                <section class="header-navbar__menu__dropdown__items--pages--submenu">
+                                                    Submenu 2
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <!-- dropdown section end -->
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- header slider section -->
+        <section class="header-slider" id="slider">
+            <section class="header-slider-container" id="headerSlider">
+                <section class="header-slider__slides">
+                    <img class="header-slider__img" src="app/images/slider/slider-bg-1.jpg" alt="">
+
+                    <section class="d-flex justify-content-center align-items-center">
+                        <section class="header-slider__texts">
+                            <h1 class="header-slider__texts__header">
+                                Crafting Digital
+                                <br>
+                                Experience
+                            </h1>
+
+                            <p class="header-slider__texts__para">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, <br> veritatis tempore
+                                nostrum id
+                                officia quaerat eum corrupti,
+                                ipsa aliquam velit.
+                            </p>
+
+                            <a href="#" class="header-slider__texts__btn">EXPLORE US</a>
+                        </section>
+                    </section>
+
+                    <section class="header-slider__dark-bcg"></section>
+                </section>
+
+                <section class="header-slider__slides">
+                    <img class="header-slider__img" src="app/images/slider/slider-bg-2.jpg" alt="">
+
+                    <section class="d-flex justify-content-center align-items-center">
+                        <section class="header-slider__texts">
+                            <h1 class="header-slider__texts__header">
+                                We Combine Design
+                                <br>
+                                and Creativity
+                            </h1>
+
+                            <p class="header-slider__texts__para">
+                                Create just what you need for your Perfect Website. Choose from a wide range
+                                of Elements & simply put them on our Canvas.
+                            </p>
+
+                            <a href="#" class="header-slider__texts__btn">EXPLORE US</a>
+                        </section>
+
+                        <section class="header-slider__dark-bcg"></section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="header-slider__btn" id="sliderBtn">
+                <section class="custom-arrows">
+                    <button class="custom-arrows__btn" id="prevBtn">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+
+                    <button class="custom-arrows__btn" id="nextBtn">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </section>
+            </section>
+        </section>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <!-- main offer section -->
+        <section class="main-offers">
+            <section class="container">
+                <header class="main-offer__header">
+                    <h3 class="main-offer__header__title">
+                        What Do We Offer
+                    </h3>
+
+                    <p class="main-offer__header__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Voluptates, earum.
+                    </p>
+
+                    <section class="main-offer__header__border"></section>
+                </header>
+
+                <section class="main-offer__content">
+                    <section class="row">
+                        <section class="col-lg-4 main-offer__content__img">
+                            <img src="app/images/about/member.jpg" alt="">
+                        </section>
+
+                        <section class="col-lg-8 main-offer__content__box">
+                            <section class="d-sm-flex">
+                                <section class="main-offer__content__items">
+                                    <i class="main-offer__content__box__icon fa fa-sad-cry"></i>
+
+                                    <h3>
+                                        Time Management
+                                    </h3>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec
+                                        dui
+                                        venenatis.
+                                    </p>
+                                </section>
+
+                                <section class="main-offer__content__items">
+                                    <i class="main-offer__content__box__icon fa fa-sad-cry"></i>
+
+                                    <h3>
+                                        Marketing Ideas
+                                    </h3>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec
+                                        dui
+                                        venenatis.
+                                    </p>
+                                </section>
+                            </section>
+
+                            <section class="d-sm-flex">
+                                <section class="main-offer__content__items">
+                                    <i class="main-offer__content__box__icon fa fa-sad-cry"></i>
+
+                                    <h3>
+                                        Mail Support
+                                    </h3>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec
+                                        dui
+                                        venenatis.
+                                    </p>
+                                </section>
+
+                                <section class="main-offer__content__items">
+                                    <i class="main-offer__content__box__icon fa fa-sad-cry"></i>
+
+                                    <h3>
+                                        Secure System
+                                    </h3>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec
+                                        dui
+                                        venenatis.
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- main agency section -->
+        <section class="main-agency">
+            <section class="container">
+                <header class="main-agency__header">
+                    <h3 class="main-agency__header__title">
+                        We Are Bingo Agency
+                    </h3>
+
+                    <p class="main-agency__header__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam reprehenderit accusamus
+                        labore
+                        iusto, aut, eum itaque illo totam tempora eius.
+                    </p>
+
+                    <section class="main-agency__header__border"></section>
+                </header>
+
+                <section class="main-agency__content d-flex">
+                    <section class="main-agency__content__img">
+                        <img class="img-fluid" src="app/images/about/about-2.png" alt="">
+                    </section>
+
+                    <section class="main-agency__content__box">
+                        <ul class="main-agency__box__list">
+                            <li>
+                                Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem laca quam venenatis
+                                vestibulum.
+                            </li>
+
+                            <li>
+                                Aenean quam. Pellentesque ornare sem laca quam venenatis vestibulum.
+                            </li>
+
+                            <li>
+                                Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem laca quam venenatis
+                                vestibulum.
+                            </li>
+
+                            <li>
+                                Etiam porta sem multipage evint landing magna mollis euismod a pharetra augue.
+                            </li>
+
+                            <li>
+                                Aenean quam. Pellentesque ornare sem laca quam venenatis vestibulum.
+                            </li>
+                        </ul>
+
+                        <a class="main-agency__box__btn" href="#">
+                            LEARN MORE
+                        </a>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- main action section -->
+        <section class="main-action position-relative">
+
+            <section class="main-action__box">
+                <section class="main-action__box__content">
+                    <h3 class="main-action__box__title">
+                        Let's Create Something Together
+                    </h3>
+
+                    <p class="main-action__box__text">
+                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, nisi elit
+                        consequat
+                        ipsum, nesagittis sem nid elit. Duis sed odio sitain elit.
+                    </p>
+
+                    <a class="main-action__box__btn" href="#">CONTACT US</a>
+                </section>
+            </section>
+        </section>
+
+        <!-- main award section -->
+        <section class="main-award">
+            <section class="container">
+                <header class="main-award__header">
+                    <h3 class="main-award__header__title">
+                        Award-Winning Agency
+                    </h3>
+
+                    <p class="main-award__header__text">
+                        Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum
+                        iaculis ex, in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a
+                        risus luctus dignissim.
+                    </p>
+                </header>
+
+                <section class="main-award__box" id="awardNum">
+                    <section class="main-award__box__items award-1">
+                        <i class="fa fa-sad-cry"></i>
+
+                        <h4 class="counter" data-count="150">
+                            0
+                        </h4>
+
+                        <p>
+                            Happy Clients
+                        </p>
+                    </section>
+
+                    <section class="main-award__box__border d-none d-lg-block award-b1"></section>
+
+                    <section class="main-award__box__items award-2">
+                        <i class="fa fa-sad-cry"></i>
+
+                        <h4 class="counter" data-count="130">
+                            0
+                        </h4>
+
+                        <p>
+                            Projects completed
+                        </p>
+                    </section>
+
+                    <section class="main-award__box__border d-none d-lg-block award-b2"></section>
+
+                    <section class="main-award__box__items award-3">
+                        <i class="fa fa-sad-cry"></i>
+
+                        <h4 class="counter" data-count="99">
+                            0
+                        </h4>
+
+                        <p>
+                            Positive feedback
+                        </p>
+                    </section>
+
+                    <section class="main-award__box__border d-none d-lg-block award-b3"></section>
+
+                    <section class="main-award__box__items award-4">
+                        <i class="fa fa-sad-cry"></i>
+
+                        <h4 class="counter" data-count="250">
+                            0
+                        </h4>
+
+                        <p>
+                            Cups of Coffee
+                        </p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- main comments section -->
+        <section class="main-comments">
+            <section class="main-comments__slider">
+                <section class="main-comments__slider__items">
+                    <section class="main-comments__slider__items__content">
+                        <span class="main-comments__slider__icon">
+                            <i class="fa fa-sad-cry"></i>
+                        </span>
+
+                        <section class="main-comments__slider__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos
+                                earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates
+                                alias
+                                natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipisicing elit. Quod, quia?
+                            </p>
+                        </section>
+
+                        <section class="main-comments__slider__img">
+                            <img src="app/images/client-logo/clients-1.jpg" alt="">
+                        </section>
+
+                        <section class="main-comments__slider__info">
+                            <h3>
+                                William Martin
+                            </h3>
+
+                            <p>
+                                CEO , Company Name
+                            </p>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="main-comments__slider__items">
+                    <section class="main-comments__slider__items__content">
+                        <span class="main-comments__slider__icon">
+                            <i class="fa fa-sad-cry"></i>
+                        </span>
+
+                        <section class="main-comments__slider__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos
+                                earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates
+                                alias
+                                natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipisicing elit. Quod, quia?
+                            </p>
+                        </section>
+
+                        <section class="main-comments__slider__img">
+                            <img src="app/images/client-logo/clients-2.jpg" alt="">
+                        </section>
+
+                        <section class="main-comments__slider__info">
+                            <h3>
+                                Emma Harrison
+                            </h3>
+
+                            <p>
+                                CEO , Company Name
+                            </p>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="main-comments__slider__items">
+                    <section class="main-comments__slider__items__content">
+                        <span class="main-comments__slider__icon">
+                            <i class="fa fa-sad-cry"></i>
+                        </span>
+
+                        <section class="main-comments__slider__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos
+                                earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates
+                                alias
+                                natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipisicing elit. Quod, quia?
+                            </p>
+                        </section>
+
+                        <section class="main-comments__slider__img">
+                            <img src="app/images/client-logo/clients-3.jpg" alt="">
+                        </section>
+
+                        <section class="main-comments__slider__info">
+                            <h3>
+                                Alexander Lucas
+                            </h3>
+
+                            <p>
+                                CEO , Company Name
+                            </p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- main posts section -->
+        <section class="main-posts">
+            <section class="container">
+                <header class="main-posts__header">
+                    <h3 class="main-posts__header__title">
+                        Latest Posts
+                    </h3>
+
+                    <section class="main-posts__header__border"></section>
+
+                    <p class="main-posts__header__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere <br> accusamus,
+                        reprehenderit libero inventore nam.
+                    </p>
+                </header>
+
+                <section class="main-posts__content">
+                    <section class="card main-posts__content__box card-1 border-0">
+                        <img class="card-img-top" src="app/images/blog/post-1.jpg" alt="">
+
+                        <section class="card-body">
+                            <h4 class="card-title main-posts__content__box__title">
+                                Reasons to Smile
+                            </h4>
+
+                            <p class="card-text main-posts__content__box__text">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf
+                                moon officia aute, non skateboard dolor brunch.
+                            </p>
+
+                            <a href="#" class="main-posts__content__box__btn">
+                                READ MORE
+                            </a>
+                        </section>
+                    </section>
+
+                    <section class="card main-posts__content__box card-2 border-0">
+                        <img class="card-img-top" src="app/images/blog/post-2.jpg" alt="">
+
+                        <section class="card-body">
+                            <h4 class="card-title main-posts__content__box__title">
+                                A Few Moments
+                            </h4>
+
+                            <p class="card-text main-posts__content__box__text">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf
+                                moon officia aute, non skateboard dolor brunch.
+                            </p>
+
+                            <a href="#" class="main-posts__content__box__btn">
+                                READ MORE
+                            </a>
+                        </section>
+                    </section>
+
+                    <section class="card main-posts__content__box card-3 border-0">
+                        <img class="card-img-top" src="app/images/blog/post-3.jpg" alt="">
+
+                        <section class="card-body">
+                            <h4 class="card-title main-posts__content__box__title">
+                                Hints for Life
+                            </h4>
+
+                            <p class="card-text main-posts__content__box__text">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf
+                                moon officia aute, non skateboard dolor brunch.
+                            </p>
+
+                            <a href="#" class="main-posts__content__box__btn">
+                                READ MORE
+                            </a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+
+    <!-- footer section -->
+    <footer class="footer">
+        <!-- footer items -->
+        <section class="footer-items">
+            <section class="container">
+                <section class="row">
+
+                    <section class="footer-items__about col-12 col-md-6 col-lg-4">
+                        <h4>
+                            ABOUT
+                        </h4>
+
+                        <p>
+                            Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus
+                            cursus
+                            commodo, tortor mauris sed posuere.
+                        </p>
+                    </section>
+
+                    <section class="footer-items__services col-12 col-md-6 col-lg-3">
+                        <h4>
+                            OUR SERVICES
+                        </h4>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Ui/Ux Design
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Graphic Design
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Web Design
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Web Development
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="footer-items__links col-12 col-md-6 col-lg-2">
+                        <h4>
+                            QUICK LINKS
+                        </h4>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Services
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Blogs
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    404
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="footer-items__connect col-12 col-md-6 col-lg-3">
+                        <h4>
+                            CONNECT WITH US SOCIALLY
+                        </h4>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Facebook
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Twitter
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Youtube
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Github
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </section>
+            </section>
+        </section>
+
+        <!-- footer copyright -->
+        <main class="footer-copyright">
+            <p>
+                © COPYRIGHT 2020. ALL RIGHTS RESERVED.
+            </p>
+            
+            <p>
+                Design And Developed By <a href="#">Themefisher</a>
+            </p>
+        </main>
+    </footer>
+
+    <!-- jquery script link -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- popper script link -->
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <!-- bootstrap script link -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Parallax -->
+    <script src="app/plugins/parallax/jquery.parallax-1.1.3.js"></script>
+    <!-- lightbox -->
+    <script src="app/plugins/lightbox2/js/lightbox.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="app/plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="app/plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="app/plugins/smooth-scroll/smooth-scroll.min.js"></script>
+    <!-- wow js -->
+    <script src="app/plugins/wow/wow.min.js"></script>
+    <!-- custom js script link -->
+    <script src="app/js/index.js"></script>
+</body>
+
+</html>
