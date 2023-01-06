@@ -1,4 +1,11 @@
+$(window).on('load', function () {
+    $('#preloader').fadeOut('slow', function () {
+        $(this).remove();
+    });
+});
+
 $(document).ready(function () {
+
     $('#barBtn').click(function () {
         $('.header-navbar__menu').slideToggle();
     });
@@ -111,7 +118,7 @@ $(document).ready(function () {
         });
     };
 
-    $(window).scroll(function () { 
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll > 2500) {
